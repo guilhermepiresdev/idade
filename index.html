@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: rgba(0, 0, 255, 0.836);
+        }
+
+        header{
+            color: white;
+            text-align: center;
+            font: normal 13pt Arial;
+            padding: 20px;
+        }
+
+        article{
+            background-color: azure;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            border-radius: 25px;
+            font: normal 15pt Arial;
+        }
+
+        #ano{
+            margin: 20px;
+        }
+
+        #sexo{
+            margin: 20px;
+            padding: 5px 0px;
+            
+        }
+        
+        #res{
+            margin: 20px;
+            padding-bottom: 20px;
+            font-size: 12pt;
+        }
+
+        img{
+            padding: 10px;
+        }
+        
+        input[type=button]{
+            width: 100px;
+            height: 20px;
+
+        }
+        
+        
+        footer{
+            color: white;
+            text-align: center;
+            font: normal 18pt Arial;
+            padding: 20px;
+        }
+                
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <article>
+        <div id="ano">
+            <p>Ano de Nascimento: </p>
+                <input type="number" name="txtano" id="txtano">
+        </div>
+            
+        <div id="sexo">
+            <p>Sexo
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+
+    </article>
+
+    <footer>
+        Guilherme Pires DEV
+    </footer>
+
+    <script src="idade.js"></script>
+
+
+</body>
+</html>
